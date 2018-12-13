@@ -106,11 +106,11 @@
             foreach($windows as $season){
                 if(in_array($season,$windows)){
                     $stats[$season] = curl_get('https://fortnite-public-api.theapinetwork.com/prod09/users/public/br_stats',array('user_id' => $user_id, 'platform' => $platform, 'window' => $season));
-                    if(!empty($stats)){
-                        return $stats;
-                    }
                 }
             }
+		if(!empty($stats)){
+                        return $stats;
+                    }
             return false;
 		}
         
@@ -120,11 +120,11 @@
             foreach($windows as $season){
                 if(in_array($season,$windows)){
                     $matches[$season] = curl_get('https://fortnite-public-api.theapinetwork.com/prod09/users/public/matches',array('user_id' => $user_id, 'platform' => $platform, 'window' => $window,'rows' => $rows));
-                    if(!empty($matches)){
-                        return $matches;
-                    }
                 }
             }
+	 if(!empty($matches)){
+		return $matches;
+	    }
             return false;
 		}
 	}
