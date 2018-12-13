@@ -1,5 +1,5 @@
 # Fortnite
-Fortnite API wrapper for PHP
+PHP wrapper for the official Fortnite API - http://fortnite.midorfeed.net
 
 ## Installation
 Include the API class into your project.You will need an API key from https://fortniteapi.com/
