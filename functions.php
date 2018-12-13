@@ -1,5 +1,5 @@
 function curl_get($url, array $get = NULL,$retry_count = 0) {  
-    global $connection,$curl_count,$app_config;
+    global $curl_count;
 	
 	$defaults = array( 
 		CURLOPT_URL => $url. (strpos($url, '?') === FALSE ? '?' : ''). http_build_query($get), 
