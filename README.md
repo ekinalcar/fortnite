@@ -1,4 +1,4 @@
-# fortnite
+# Fortnite
 Fortnite API wrapper for PHP
 
 ## Installation
